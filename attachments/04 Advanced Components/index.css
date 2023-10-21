@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(#f0f6f8, #e0e1e7);
+}
+
+main {
+  width: 90%;
+  max-width: 40rem;
+  margin: 3rem auto;
+  padding: 2rem;
+  background-color: #3a4346;
+  color: #f0f6f8;
+  border-radius: 6px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  justify-content: center;
+  align-items: center;
+}
+
+img {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 1.75rem;
+  color: #f7e596;
+}
+
+label {
+  display: block;
+  font-size: 0.85rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #dfd9be;
+}
+
+input {
+  font: inherit;
+  width: 100%;
+  padding: 0.5rem;
+  background-color: #b4b6c4;
+  border: none;
+  border-radius: 4px;
+}
+
+form button {
+  display: block;
+  width: 100%;
+  padding: 0.75rem;
+  margin-top: 1rem;
+  background-color: #f7e596;
+  border: none;
+  border-radius: 4px;
+  font: inherit;
+  font-weight: bold;
+  color: #3a4346;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #f9e175;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+}
+
+li {
+  background-color: #475357;
+  padding: 1rem;
+  border-radius: 4px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+}
+
+li article {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+li h2 {
+  margin: 0;
+  font-size: 1.25rem;
+  color: #b1c1c3;
+}
+
+li p {
+  margin: 0;
+  font-size: 0.85rem;
+  color: #dfd9be;
+}
+
+li button {
+  font: inherit;
+  padding: 0 0.5rem;
+  background: transparent;
+  border: none;
+  color: #909a9a;
+  cursor: pointer;
+}
+
+li button:hover {
+  color: #f9a73b;
+}
+
+.infobox {
+  margin: 2rem 0;
+  padding: 0.5rem;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+  font-size: 0.85rem;
+  border-radius: 4px;
+}
+
+.infobox-hint {
+  border: 1px solid #96f5f7;
+  color: #96f5f7;
+}
+
+.infobox-warning.warning--low {
+  border: 1px solid #f6d84f;
+  color: #f6d84f;
+}
+
+.infobox-warning.warning--medium {
+  border: 1px solid #f9a73b;
+  color: #f9a73b;
+}
+
+.infobox-warning.warning--high {
+  border: 1px solid #f97373;
+  color: #f97373;
+}

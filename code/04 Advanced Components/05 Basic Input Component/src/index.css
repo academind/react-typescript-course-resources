@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&family=Handjet:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background: linear-gradient(#c8d8d7, #979e9d);
+  min-height: 100vh;
+  font-family: 'Quicksand', sans-serif;
+}
+
+#root {
+  max-width: 50rem;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: linear-gradient(#35535b, #294a52);
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  color: white;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 40rem;
+  margin: 0 auto;
+}
+
+ul {
+  list-style: none;
+  max-width: 40rem;
+  margin: 2rem auto;
+  padding: 0;
+  font-family: 'Handjet', sans-serif;
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(18rem, 10rem));
+}
+
+ul li {
+  background: linear-gradient(#46585d, #223338);
+  padding: 1rem;
+  border-radius: 6px;
+  color: #76bbcf;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+ul h2 {
+  font-size: 2rem;
+  text-align: center;
+  margin: 0;
+}
+
+ul p {
+  text-align: center;
+  font-size: 1.25rem;
+  color: #9fc3cd;
+}
+
+ul progress {
+  width: 100%;
+  height: 1rem;
+  border-radius: 6px;
+  margin: 1rem 0;
+}
+
+ul progress::-webkit-progress-bar {
+  background: #a5e5da;
+  border-radius: 6px;
+}
+
+ul progress::-webkit-progress-value {
+  background: #4562f3;
+  border-radius: 6px;
+}
+
+label {
+  display: block;
+  font-size: 0.85rem;
+  color: #bbe3dd;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 0.35rem;
+}
+
+input {
+  display: block;
+  font: inherit;
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 6px;
+  border: 1px solid #486560;
+  background-color: #daedea;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  color: #07302a;
+}
+
+.button {
+  font: inherit;
+  padding: 0.5rem;
+  border-radius: 4px;
+  border: 1px solid #338196;
+  background-color: #338196;
+  color: white;
+  cursor: pointer;
+}
+
+.button:hover,
+.button:active {
+  background-color: #217086;
+  border-color: #217086;
+}
+
+#add-timer {
+  max-width: 20rem;
+  margin: 3rem auto;
+  text-align: center;
+}
