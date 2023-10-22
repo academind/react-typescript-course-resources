@@ -7,13 +7,14 @@ import { Session, useSessionsContext } from '../../store/sessions-context.tsx';
 
 type BookSessionProps = {
   session: Session;
-  onDone: () => void;
+  onDone: () => void; // onDone will "tell" the parent component that the BookSession component should be removed from the DOM
 };
 
 export default function BookSession({ session, onDone }: BookSessionProps) {
   const modal = useRef<ModalHandle>(null);
   const sessionsCtx = useSessionsContext();
 
+  // useEffect is used to open the Modal via its exposed `open` method when the component is mounted
   useEffect(() => {
     if (modal.current) {
       modal.current.open();

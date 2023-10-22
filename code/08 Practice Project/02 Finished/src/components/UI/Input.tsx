@@ -1,5 +1,6 @@
 import type { ComponentPropsWithoutRef } from 'react';
 
+// Setting up InputProps that contain the default <input> props as well as some custom props (label, id)
 type InputProps = {
   label: string;
   id: string;
